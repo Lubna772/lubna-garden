@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lubna Garden</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #4CAF50; color: white; padding: 20px; text-align: center; }
+    nav { background: #333; display: flex; justify-content: center; padding: 10px 0; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    section { padding: 20px; }
+    .content, .form-box, .products { background: white; margin: 20px auto; padding: 20px; border-radius: 8px; max-width: 900px; }
+    .product-item { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc; padding: 10px 0; }
+    .product-item:last-child { border-bottom: none; }
+    footer { background: #333; color: white; text-align: center; padding: 15px 0; }
+    input, textarea, button, select { width: 100%; margin: 10px 0; padding: 10px; font-size: 16px; }
+    button { background: #4CAF50; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lubna Garden</h1>
+    <p>Bringing Nature to Your Doorstep</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="content">
+      <h2>About Us</h2>
+      <p>Welcome to Lubna Garden. We specialize in plants, gardening tools, and landscaping services. Our mission is to bring nature closer to you with quality and care.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Indoor and outdoor plants</li>
+        <li>Gardening tools and accessories</li>
+        <li>Custom landscaping</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="products">
+      <h2>Our Products</h2>
+      <div class="product-item">
+        <span>Rose Plant</span>
+        <span>$10</span>
+      </div>
+      <div class="product-item">
+        <span>Garden Shovel</span>
+        <span>$7</span>
+      </div>
+      <div class="product-item">
+        <span>Fertilizer Pack</span>
+        <span>$15</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="form-box">
+      <h2>Place an Order</h2>
+      <form action="https://formspree.io/f/moqrzgry" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="product">Select Product:</label>
+        <select id="product" name="product">
+          <option value="Rose Plant">Rose Plant</option>
+          <option value="Garden Shovel">Garden Shovel</option>
+          <option value="Fertilizer Pack">Fertilizer Pack</option>
+        </select>
+        <label for="details">Additional Details:</label>
+        <textarea id="details" name="details" rows="4"></textarea>
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>Email: fajlayrehma@gmail.com</p>
+      <p>Phone: 8792575995</p>
+      <p>Address: lubna garden aecs layout a block,Bengaluru 560068 </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lubna Garden. All rights reserved.</p>
+  </footer>
+</body>
+</html>
